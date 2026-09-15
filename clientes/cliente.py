@@ -1,5 +1,6 @@
 from typing import List,Any
 from endereco import Endereco
+from avaliacoes.avaliacao_produto import AvaliacaoProduto
 
 class Cliente:
 
@@ -34,8 +35,6 @@ class Cliente:
         if e in self.enderecos:
             self.enderecos.remove(e)
 
-    def fazer_avaliacao(self, avaliacao: Any) -> None:
-        """Método para registrar uma avaliação de produto."""
-        # TODO: Implementar quando a classe AvaliacaoProduto estiver criada
-        pass
+    def fazer_avaliacao(self, a: AvaliacaoProduto) -> None:
+        print(f"Cliente {self._nome} avaliou com nota {a._nota}: {a._comentario}")
         
