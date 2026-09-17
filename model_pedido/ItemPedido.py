@@ -1,4 +1,4 @@
-from model_restaurante.produto import Produto
+from model_restaurante.Produto import Produto
 
 class ItemPedido:
     def __init__(self, produto: Produto, quantidade: int, preco_unitario: float) -> None:

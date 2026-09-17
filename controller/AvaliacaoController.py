@@ -1,5 +1,5 @@
 from typing import List
-from model_restaurante.avaliacao_produto import AvaliacaoProduto
+from model_restaurante.AvaliacaoProduto import AvaliacaoProduto
 
 class AvaliacaoControle:
     avaliacoes: List[AvaliacaoProduto]
@@ -22,7 +22,7 @@ class AvaliacaoControle:
     def remover_avaliacao(self, avaliacao_id: int) -> bool:
 
         for a in self.avaliacoes:
-            if a._id == avaliacao_id:
+            if a.__id == avaliacao_id:
                 self.avaliacoes.remove(a)
                 return True
         return False

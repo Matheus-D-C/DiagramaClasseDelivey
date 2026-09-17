@@ -1,6 +1,6 @@
 from typing import Optional
 from Endereco import Endereco
-from model_restaurante.avaliacao_produto import AvaliacaoProduto
+from model_restaurante.AvaliacaoProduto import AvaliacaoProduto
 
 class Cliente:
 
@@ -51,7 +51,7 @@ class Cliente:
     def fazer_avaliacao(self, a: AvaliacaoProduto) -> None:
         if a.validar_nota():
             self.__avaliacoes.append(a)
-            print(f"Cliente {self.__nome} avaliou com nota {a.__nota}: {a._comentario}.")
+            print(f"Cliente {self.__nome} avaliou com nota {a.__nota}: {a.__comentario}.")
         else:
             print("Avaliação inválida. A nota deve ser entre 1 e 5.")
         

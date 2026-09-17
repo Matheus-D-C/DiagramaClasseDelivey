@@ -6,7 +6,7 @@ class AvaliacaoProduto:
         self.__id = id_avaliacao
         self.__nota = nota
         self.__comentario = comentario
-        self.__data_de_avaliacao = data_de_avaliacao or datetime.now()
+        self.__dataDeAvaliacao = data_de_avaliacao or datetime.now()
 
     @property
     def id(self) -> int:
@@ -22,11 +22,11 @@ class AvaliacaoProduto:
     
     @property
     def data_de_avaliacao(self) -> datetime:
-        return self.__data_de_avaliacao
+        return self.__dataDeAvaliacao
 
     def validar_nota(self) -> bool:
         return 1 <= self.__nota <= 5
 
     def editar_comentario(self, novo_comentario: str) -> None:
-        self._comentario = novo_comentario
+        self.__comentario = novo_comentario
         
