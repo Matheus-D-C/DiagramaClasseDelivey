@@ -1,6 +1,6 @@
 from typing import List, Optional
 from item_pedido import ItemPedido
-from entregas.entrega import Entrega
+from model_entrega.entrega import Entrega
 
 class Pedido:
 

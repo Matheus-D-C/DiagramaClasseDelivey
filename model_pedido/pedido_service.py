@@ -1,6 +1,6 @@
 from typing import Optional
 from pedido import Pedido
-from restaurantes.produto import Produto
+from model_restaurante.produto import Produto
 
 class PedidoService:
     def criar_pedido(self) -> Optional[Pedido]:

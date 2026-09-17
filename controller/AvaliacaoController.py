@@ -1,5 +1,5 @@
 from typing import List
-from avaliacao_produto import AvaliacaoProduto
+from model_restaurante.avaliacao_produto import AvaliacaoProduto
 
 class AvaliacaoControle:
     avaliacoes: List[AvaliacaoProduto]
